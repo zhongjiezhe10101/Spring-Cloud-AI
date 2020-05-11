@@ -32,20 +32,21 @@
       }
     },
     plugins: [
-      function(hook) {
+      function (hook, vm) {
         var footer = [
           '<hr/>',
           '<footer>',
-          '<span><a href="https://www.aicode.info/">AiCode</a> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?spm=5176.12825654.7y9jhqsfz.112.67fb2c4a2TgraE&aly_as=ZtTQ1s2d">蜀ICP备19037088号</a> &copy;2020.</span>',
-          '<span>Proudly published with<a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+          '<span><a href="https://www.aicode.info/">AiCode</a> | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?spm=5176.12825654.7y9jhqsfz.112.67fb2c4a2TgraE&aly_as=ZtTQ1s2d">蜀ICP备19037088号</a> &copy;2019.</span>',
+          '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
           '</footer>'
         ].join('');
-        hook.afterEach(function(html) {
-          return html + footer;
+        hook.afterEach(function (html) {
+          return html + footer
         });
         hook.beforeEach(function (html) {
           var url = 'https://github.com/zhongjiezhe10101/Spring-Cloud-AI/tree/master/docs' + vm.route.file;
           var editHtml = '[📝 编辑该文档](' + url + ')\n';
+
           return  html
                   + '\n----\n'
                   + '最后更新时间： {docsify-updated} '
