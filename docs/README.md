@@ -17,11 +17,6 @@
 
 
 
-
-
-
-
-
 ### 提供bug或建议
 - [Github](https://github.com/zhongjiezhe10101/Spring-Cloud-AI/issues)
 
