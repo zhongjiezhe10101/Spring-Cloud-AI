@@ -10,6 +10,6 @@
 
 
 [~~登录系统~~](http://127.0.0.1:1516//login/login.html)
-[GitHub](https://github.com/zhongjiezhe10101/Spring-Cloud-AI)
+[GitHub](<a target="_blank" href='https://github.com/zhongjiezhe10101/Spring-Cloud-AI'>Github</a>)
 [开始旅程](#简介)
 
